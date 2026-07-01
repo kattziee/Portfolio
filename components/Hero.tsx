@@ -58,7 +58,6 @@ export default function Hero() {
         {/* Sub text */}
         <p className="text-gray-500 dark:text-gray-400 max-w-xl mx-auto text-lg leading-relaxed">
           Turning raw data into decisions. Building intelligent systems from scratch.
-          Based in Madurai, India.
         </p>
 
         {/* CTAs */}
