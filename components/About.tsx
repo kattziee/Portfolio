@@ -100,7 +100,7 @@ export default function About() {
 
             <div className="reveal pt-2">
               <a
-                href="/Shahul_Resume.pdf"
+                href="/Shahul Resume.pdf"
                 download
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-500 hover:bg-blue-600 text-white font-semibold transition-all duration-200 shadow-lg shadow-blue-500/20 hover:-translate-y-0.5"
               >
