@@ -69,7 +69,7 @@ export default function Hero() {
             View Projects
           </a>
           <a
-            href="/Shahul_Resume.pdf"
+            href="/Shahul Resume.pdf"
             download
             className="px-6 py-3 rounded-xl border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-semibold hover:border-blue-500 hover:text-blue-500 dark:hover:border-blue-500 dark:hover:text-blue-400 transition-all duration-200 hover:-translate-y-0.5"
           >
