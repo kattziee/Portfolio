@@ -19,11 +19,10 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view it locally.
 
 ## Contact
 
 **Shahul Hameed**
 - GitHub: [@kattziee](https://github.com/kattziee)
-- Email: [Add your email]
+- Email: shahulhameedali8@gmail.com
 - LinkedIn: [Add your LinkedIn]
