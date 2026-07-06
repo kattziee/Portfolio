@@ -22,7 +22,7 @@ npm run dev
 
 ## Contact
 
-**Shahul Hameed**
+**Shahul Hameed Ali**
 - GitHub: [@kattziee](https://github.com/kattziee)
 - Email: shahulhameedali8@gmail.com
-- LinkedIn: [Add your LinkedIn]
+- LinkedIn: www.linkedin.com/in/shahulhameedalim
