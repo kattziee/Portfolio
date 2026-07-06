@@ -2,7 +2,7 @@
 
 My personal portfolio website, built with Next.js, TypeScript, and Tailwind CSS.
 
-🔗 **Live site:** [shahul-portfolio-wheat.vercel.app](https://shahulportfolio.vercel.app/)
+🔗 **Live site:** [shahulportfoliohere](https://shahulportfolio.vercel.app/)
 
 ## Tech Stack
 
