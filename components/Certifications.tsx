@@ -5,15 +5,15 @@ const certs = [
   {
     title: "Data Science & Machine Learning",
     issuer: "Internship Certificate — Dot Com Infoway",
-    date: "Jun 2026",
+    date: "June 2026",
     description: "Built churn prediction and salary estimation models; applied EDA, feature engineering, and regression/classification algorithms on real-world datasets.",
     color: "blue",
   },
   {
-    title: "Python for Data Science",
-    issuer: "NPTEL / Coursera",
-    date: "2025",
-    description: "Covered Python fundamentals, data manipulation with Pandas, and statistical analysis for data science applications.",
+    title: "Python Course for Mastering the essentials",
+    issuer: "Scaler",
+    date: "July 2026",
+    description: "Covered Python fundamentals, control flow, functions, OOP, file handling and problem-solving through hands-on coding exercises.",
     color: "blue",
   },
   {
