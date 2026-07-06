@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const TITLES = [
   "Data Scientist",
-  "Machine Learning Engineer",
+  "Machine Learning",
   "Python Developer",
   "Power BI Analyst",
 ];
@@ -43,7 +43,7 @@ export default function Hero() {
         {/* Name */}
         <h1 className="text-centre mx-auto text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-[0.2em] uppercase leading-tight text-blue-900 dark:text-white whitespace-nowrap">
           <span className="inline-block bg-gradient-to-r from-blue-600 via-sky-500 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_0_16px_rgba(59,130,246,0.45)]">
-            SHAHUL HAMEED ALI M
+          SHAHUL HAMEED ALI M
           </span>
         </h1>
 
