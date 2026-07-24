@@ -8,43 +8,20 @@ const projects = [
       "End-to-end ML web app that estimates employee salaries based on experience, skills, and job attributes. Includes interactive dashboard with real-time prediction.",
     tech: ["Python", "Scikit-learn", "Streamlit", "Pandas"],
     github: "https://github.com/kattziee",
-    demo: "#",
+    demo:"https://employeepredictionshahul.streamlit.app/"
     highlight: true,
   },
   {
-    title: "Customer Churn Prediction",
+    title: "Automated Analyzer",
     description:
       "Classification model identifying customers likely to churn, enabling data-driven retention strategies. Built with full EDA pipeline and feature engineering.",
     tech: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
     github: "https://github.com/kattziee",
-    demo: null,
+    demo:"https://automated-analyzer-shahul.streamlit.app/"
+    highlight:true,
   },
   {
-    title: "Sales Dashboard — Power BI",
-    description:
-      "Interactive Power BI dashboard visualising regional sales performance, KPIs, and month-over-month trends for business decision-making.",
-    tech: ["Power BI", "DAX", "SQL"],
-    github: "https://github.com/kattziee",
-    demo: null,
-  },
-  {
-    title: "Exploratory Data Analysis — Titanic",
-    description:
-      "Deep-dive EDA on the Titanic dataset uncovering survival patterns by class, age, and gender using statistical visualisations.",
-    tech: ["Python", "Pandas", "Seaborn", "Matplotlib"],
-    github: "https://github.com/kattziee",
-    demo: null,
-  },
-  {
-    title: "House Price Prediction",
-    description:
-      "Regression model predicting house prices using feature engineering on location, area, and amenities with comprehensive model evaluation.",
-    tech: ["Python", "Scikit-learn", "NumPy", "Pandas"],
-    github: "https://github.com/kattziee",
-    demo: null,
-  },
-  {
-    title: "Student Performance Analysis",
+    title: "Human vs LLM Detection",
     description:
       "Statistical analysis and visualisation of factors influencing student academic performance, with actionable insights presented via Seaborn plots.",
     tech: ["Python", "Pandas", "Seaborn", "Statistics"],
