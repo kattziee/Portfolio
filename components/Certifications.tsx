@@ -16,20 +16,6 @@ const certs = [
     description: "Covered Python fundamentals, control flow, functions, OOP, file handling and problem-solving through hands-on coding exercises.",
     color: "blue",
   },
-  {
-    title: "Power BI — Data Analytics",
-    issuer: "Microsoft Learn",
-    date: "2025",
-    description: "Dashboard design, DAX functions, data modelling, and business intelligence reporting with Power BI Desktop.",
-    color: "blue",
-  },
-  {
-    title: "SQL for Data Analysis",
-    issuer: "HackerRank",
-    date: "2026",
-    description: "Advanced SQL queries, joins, aggregations, and window functions for analytical workloads.",
-    color: "blue",
-  },
 ];
 
 export default function Certifications() {
