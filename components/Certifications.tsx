@@ -63,16 +63,38 @@ export default function Certifications() {
                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">{c.description}</p>
               </div>
             </div>
-          <div className="reveal text-center mt-10">
-          <a
-            href="https://github.com/kattziee/Portfolio/edit/main/components/Certifications.tsx"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-semibold hover:border-emerald-500 hover:text-emerald-500 transition-all duration-200"
-          >
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+      <div className="reveal text-center mt-10">
+  <a
+    href="https://www.linkedin.com/in/shahulhameedalim/details/certifications/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
+    aria-label="View all certifications on LinkedIn"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="w-5 h-5"
+    >
+      <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.32V9h3.42v1.56h.05c.48-.9 1.64-1.86 3.37-1.86 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z" />
+    </svg>
+
+    <span>View All Certifications on LinkedIn</span>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="w-4 h-4"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M13.5 4.5H19.5V10.5M19.5 4.5L10.5 13.5M5.25 6.75V18.75H17.25"
+      />
+    </svg>
+  </a>
+</div>
