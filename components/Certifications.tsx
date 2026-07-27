@@ -63,6 +63,13 @@ export default function Certifications() {
                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">{c.description}</p>
               </div>
             </div>
+          <div className="reveal text-center mt-10">
+          <a
+            href="https://github.com/kattziee/Portfolio/edit/main/components/Certifications.tsx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-semibold hover:border-emerald-500 hover:text-emerald-500 transition-all duration-200"
+          >
           ))}
         </div>
       </div>
