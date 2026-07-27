@@ -8,7 +8,7 @@ const projects = [
       "End-to-end ML web app that estimates employee salaries based on experience, skills, and job attributes. Includes interactive dashboard with real-time prediction.",
     tech: ["Python", "Scikit-learn", "Streamlit", "Pandas"],
     github: "https://github.com/kattziee",
-    demo:"https://employeepredictionshahul.streamlit.app/"
+    demo:
     highlight: true,
   },
   {
@@ -17,7 +17,7 @@ const projects = [
       "Classification model identifying customers likely to churn, enabling data-driven retention strategies. Built with full EDA pipeline and feature engineering.",
     tech: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
     github: "https://github.com/kattziee",
-    demo:"https://automated-analyzer-shahul.streamlit.app/"
+    demo:
     highlight:true,
   },
   {
