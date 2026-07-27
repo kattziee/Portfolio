@@ -13,7 +13,7 @@ const projects = [
   {
     title: "Employee Salary Prediction",
     description:
-      "End-to-end ML web app that estimates employee salaries based on experience, skills, and job attributes. Includes interactive dashboard with real-time prediction.",
+      "Developed an end-to-end machine learning application to predict employee salaries based on experience, education, job role, and other professional attributes. Implemented data preprocessing, feature engineering, and regression models to deliver accurate salary estimates. Built an interactive web interface for real-time predictions, enabling users to analyse salary trends and support data-driven compensation decisions.",
     tech: ["Python", "Scikit-learn", "Streamlit", "Pandas"],
     github: "https://github.com/kattziee",
     demo: null,
