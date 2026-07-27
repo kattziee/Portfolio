@@ -3,28 +3,27 @@ import { useEffect, useRef } from "react";
 
 const projects = [
   {
+    title: "Automated Analyzer",
+    description:
+      "Automated Analyzer is a web-based application that streamlines data analysis by automating data validation, processing, and report generation. It enables users to upload datasets, perform statistical analysis, and visualize results through interactive dashboards and charts. Built with a responsive interface and secure backend, the system improves accuracy, reduces manual effort, and supports faster decision-making for educational, business, and research applications.",
+    tech: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Plotly", "Streamlit"],
+    demo: null,
+    highlight: true,
+  },
+  {
     title: "Employee Salary Prediction",
     description:
       "End-to-end ML web app that estimates employee salaries based on experience, skills, and job attributes. Includes interactive dashboard with real-time prediction.",
     tech: ["Python", "Scikit-learn", "Streamlit", "Pandas"],
     github: "https://github.com/kattziee",
     demo: null,
-    highlight: true,
-  },
-  {
-    title: "Automated Analyzer",
-    description:
-      "Classification model identifying customers likely to churn, enabling data-driven retention strategies. Built with full EDA pipeline and feature engineering.",
-    tech: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
-    github: "https://github.com/kattziee",
-    demo: null,
-    highlight: true,
+    highlight: null,
   },
   {
     title: "Human vs LLM Detection",
     description:
-      "Statistical analysis and visualisation of factors influencing student academic performance, with actionable insights presented via Seaborn plots.",
-    tech: ["Python", "Pandas", "Seaborn", "Statistics"],
+      "Developed a machine learning application to distinguish between human-written and AI-generated text using Natural Language Processing (NLP) techniques. The system preprocesses text, extracts linguistic features, and classifies content using trained machine learning models. It helps identify AI-generated content with high accuracy, supporting academic integrity, content verification, and digital authenticity.",
+    tech: ["Python", "Pandas", "JupyterNotebook", "Scikit-Learn"],
     github: "https://github.com/kattziee",
     demo: null,
   },
