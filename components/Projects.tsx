@@ -18,7 +18,7 @@ const projects = [
     tech: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
     github: "https://github.com/kattziee",
     demo:
-    highlight:true,
+    highlight: true,
   },
   {
     title: "Human vs LLM Detection",
