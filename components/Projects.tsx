@@ -11,6 +11,14 @@ const projects = [
     highlight: true,
   },
   {
+   title: "Customer Churn Prediction",
+    description:
+      "A machine learning web app that predicts customer churn risk in real time. Built with a Python-trained model served via ONNX and a Next.js dashboard featuring customer risk scoring, drill-down insights, and model performance tracking. Deployed on Vercel.",
+    tech: ["Python", "Scikit-learn", "Pandas", "ONNX", "TypeScript", "Vercel"],
+    demo: null,
+    highlight: true,
+  },
+  {
     title: "Employee Salary Prediction",
     description:
       "Developed an end-to-end machine learning application to predict employee salaries based on experience, education, job role, and other professional attributes. Implemented data preprocessing, feature engineering, and regression models to deliver accurate salary estimates. Built an interactive web interface for real-time predictions, enabling users to analyse salary trends and support data-driven compensation decisions.",
