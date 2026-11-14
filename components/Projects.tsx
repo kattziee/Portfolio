@@ -60,7 +60,7 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid gap-6 sm:grid-cols-2">
           {projects.map((p, i) => (
             <div
               key={p.title}
@@ -96,10 +96,12 @@ export default function Projects() {
               </div>
 
               <div className="mt-5 flex gap-3">
+                {p.github && (
                 <a
                   href={p.github}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`View ${p.title} source code on GitHub`}
                   className="flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 hover:text-blue-500 transition-colors font-medium"
                 >
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -107,6 +109,7 @@ export default function Projects() {
                   </svg>
                   Code
                 </a>
+                )}
                 {p.demo && p.demo !== "#" && (
                   <a
                     href={p.demo}

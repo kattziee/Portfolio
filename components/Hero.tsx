@@ -32,8 +32,10 @@ export default function Hero() {
   }, [displayed, deleting, titleIndex]);
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 pt-16 bg-transparent">
-      <div className="max-w-3xl w-full text-center space-y-6">
+    <section className="relative flex min-h-[88svh] items-center justify-center overflow-hidden px-6 pb-12 pt-24">
+      <div aria-hidden="true" className="pointer-events-none absolute right-[8%] top-1/4 hidden h-72 w-72 rounded-full border border-[var(--line)] md:block" />
+      <div aria-hidden="true" className="pointer-events-none absolute right-[12%] top-[30%] hidden h-56 w-56 rounded-full border border-[var(--accent)]/20 md:block" />
+      <div className="relative z-10 w-full max-w-5xl space-y-7 text-center">
         {/* Greeting badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 dark:bg-blue-950/50 border border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-400 text-sm font-medium">
           <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
@@ -41,9 +43,9 @@ export default function Hero() {
         </div>
 
         {/* Name */}
-        <h1 className="text-centre mx-auto text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-[0.2em] uppercase leading-tight text-blue-900 dark:text-white whitespace-nowrap">
-          <span className="inline-block bg-gradient-to-r from-blue-600 via-sky-500 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_0_16px_rgba(59,130,246,0.45)]">
-          SHAHUL HAMEED ALI M
+        <h1 className="mx-auto max-w-4xl text-center text-4xl font-bold uppercase leading-[1.08] tracking-[-0.045em] text-gray-900 dark:text-white sm:text-6xl lg:text-7xl">
+          <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-sky-500 bg-clip-text text-transparent">
+            Shahul Hameed Ali M
           </span>
         </h1>
 

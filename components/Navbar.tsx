@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 
 const links = [
+  { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#certifications", label: "Certifications" },
   { href: "#contact", label: "Contact" },
@@ -49,7 +50,7 @@ export default function Navbar() {
 
         {/* Mobile: hamburger */}
         <div className="flex md:hidden items-center gap-2">
-          <button onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu"
+          <button onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={menuOpen} aria-controls="mobile-navigation"
             className="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
             {menuOpen ? (
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -66,7 +67,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-950 border-t border-gray-100 dark:border-gray-800 px-6 py-4 flex flex-col gap-4">
+        <div id="mobile-navigation" className="md:hidden bg-white dark:bg-gray-950 border-t border-gray-100 dark:border-gray-800 px-6 py-4 flex flex-col gap-4">
           {links.map((l) => (
             <a key={l.href} href={l.href}
               onClick={() => setMenuOpen(false)}
