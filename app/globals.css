@@ -3,107 +3,120 @@
 @tailwind utilities;
 
 :root {
-  --accent: #2e7bff;
-  --accent-light: #6eb5ff;
+  color-scheme: dark;
 }
 
 html {
   scroll-behavior: smooth;
-  min-height: 100%;
+  scroll-padding-top: 5rem;
+  background-color: #3a0f34;
 }
 
 @layer base {
   body {
-    @apply text-gray-900 dark:text-gray-100 transition-colors duration-300;
-    position: relative;
-    min-height: 100vh;
-    overflow-x: hidden;
-    background-color: #f7faff;
-    background-image:
-      radial-gradient(circle at top left, rgba(46, 123, 255, 0.14), transparent 34%),
-      radial-gradient(circle at bottom right, rgba(46, 123, 255, 0.1), transparent 30%),
-      radial-gradient(circle at 20% 20%, rgba(255,255,255,0.7) 0 1.2px, transparent 1.2px),
-      radial-gradient(circle at 70% 30%, rgba(46, 123, 255, 0.16) 0 1.4px, transparent 1.4px),
-      radial-gradient(circle at 80% 80%, rgba(255,255,255,0.65) 0 1.1px, transparent 1.1px),
-      radial-gradient(circle at 30% 80%, rgba(46, 123, 255, 0.12) 0 1.3px, transparent 1.3px),
-      radial-gradient(ellipse 40px 20px at 25% 20%, rgba(255,255,255,0.6), transparent 70%),
-      radial-gradient(ellipse 60px 28px at 72% 70%, rgba(46, 123, 255, 0.14), transparent 70%);
-    background-size: auto, auto, 220px 220px, 260px 260px, 300px 300px, 280px 280px, 420px 420px, 460px 460px;
-    background-attachment: fixed;
+    @apply bg-plum-800 font-sans text-ink antialiased;
   }
 
-  body::before {
-    content: "";
-    position: fixed;
-    inset: -10% -10% auto auto;
-    width: 30rem;
-    height: 30rem;
-    background: radial-gradient(circle, rgba(46, 123, 255, 0.24) 0%, rgba(46, 123, 255, 0) 70%);
-    filter: blur(80px);
-    pointer-events: none;
-    z-index: -1;
+  /* Young Serif ships a single weight, so headings stay at normal weight */
+  h1,
+  h2,
+  h3 {
+    @apply font-display font-normal;
   }
 
-  body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: -1;
-    background-image:
-      radial-gradient(circle at 15% 15%, rgba(255,255,255,0.45) 0 1.8px, transparent 1.8px),
-      radial-gradient(circle at 55% 25%, rgba(46, 123, 255, 0.2) 0 2px, transparent 2px),
-      radial-gradient(circle at 75% 80%, rgba(255,255,255,0.42) 0 1.6px, transparent 1.6px),
-      radial-gradient(circle at 35% 70%, rgba(46, 123, 255, 0.16) 0 1.7px, transparent 1.7px),
-      radial-gradient(ellipse 80px 40px at 20% 40%, rgba(46, 123, 255, 0.1), transparent 70%),
-      radial-gradient(ellipse 90px 46px at 78% 22%, rgba(255,255,255,0.55), transparent 70%);
-    background-size: 240px 240px, 280px 280px, 320px 320px, 260px 260px, 460px 460px, 500px 500px;
-    mix-blend-mode: screen;
-    opacity: 0.9;
+  ::selection {
+    background-color: #eaaa00;
+    color: #3a0f34;
   }
 
-  .dark body {
-    background-color: #030711;
-    background-image:
-      radial-gradient(circle at top left, rgba(110, 181, 255, 0.2), transparent 34%),
-      radial-gradient(circle at bottom right, rgba(46, 123, 255, 0.18), transparent 28%),
-      radial-gradient(circle at 20% 20%, rgba(255,255,255,0.16) 0 1.2px, transparent 1.2px),
-      radial-gradient(circle at 70% 30%, rgba(110, 181, 255, 0.2) 0 1.4px, transparent 1.4px),
-      radial-gradient(circle at 80% 80%, rgba(255,255,255,0.14) 0 1.1px, transparent 1.1px),
-      radial-gradient(circle at 30% 80%, rgba(110, 181, 255, 0.16) 0 1.3px, transparent 1.3px),
-      radial-gradient(ellipse 40px 20px at 25% 20%, rgba(255,255,255,0.18), transparent 70%),
-      radial-gradient(ellipse 60px 28px at 72% 70%, rgba(110, 181, 255, 0.16), transparent 70%);
-    background-size: auto, auto, 220px 220px, 260px 260px, 300px 300px, 280px 280px, 420px 420px, 460px 460px;
-  }
-
-  .dark body::after {
-    background-image:
-      radial-gradient(circle at 15% 15%, rgba(255,255,255,0.16) 0 1.8px, transparent 1.8px),
-      radial-gradient(circle at 55% 25%, rgba(110, 181, 255, 0.2) 0 2px, transparent 2px),
-      radial-gradient(circle at 75% 80%, rgba(255,255,255,0.14) 0 1.6px, transparent 1.6px),
-      radial-gradient(circle at 35% 70%, rgba(110, 181, 255, 0.16) 0 1.7px, transparent 1.7px),
-      radial-gradient(ellipse 80px 40px at 20% 40%, rgba(110, 181, 255, 0.1), transparent 70%),
-      radial-gradient(ellipse 90px 46px at 78% 22%, rgba(255,255,255,0.15), transparent 70%);
-    opacity: 0.8;
+  :focus-visible {
+    outline: 2px solid #eaaa00;
+    outline-offset: 3px;
   }
 }
 
-/* Typing cursor blink */
+@layer components {
+  /* Zari border: a woven gold band, used once under the hero and once above the footer */
+  .zari {
+    height: 18px;
+    background-color: #240820;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='18' viewBox='0 0 24 18'%3E%3Cpath d='M12 3 L19 9 L12 15 L5 9 Z' fill='none' stroke='%23EAAA00' stroke-width='1.5'/%3E%3Ccircle cx='12' cy='9' r='1.6' fill='%23EAAA00'/%3E%3C/svg%3E");
+    background-size: 24px 18px;
+    background-repeat: repeat-x;
+    border-top: 1px solid #eaaa00;
+    border-bottom: 1px solid #eaaa00;
+  }
+
+  /* Page-load sequence: the name rises into place, then the rest fades in */
+  .hero-line {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 0.12em;
+    margin-bottom: -0.12em;
+  }
+
+  .hero-line > span {
+    display: inline-block;
+    transform: translateY(105%);
+    animation: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+  }
+
+  .hero-fade {
+    opacity: 0;
+    animation: fade-in 0.8s ease-out forwards;
+  }
+
+  .typing-cursor {
+    animation: blink 0.75s step-end infinite;
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(105%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-.typing-cursor {
-  animation: blink 0.75s step-end infinite;
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
-/* Scroll reveal */
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .hero-line > span,
+  .hero-fade {
+    opacity: 1;
+    transform: none;
+  }
 }

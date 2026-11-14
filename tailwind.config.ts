@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,25 +9,30 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        emerald: {
-          400: "#34d399",
-          500: "#10b981",
-          600: "#059669",
+        // Plum scale built around the brand colour #3A0F34 (plum-800)
+        plum: {
+          950: "#240820",
+          900: "#2E0B29",
+          800: "#3A0F34",
+          700: "#4C1B45",
+          600: "#6A3562",
         },
+        // Zari gold built around the brand colour #EAAA00
+        gold: {
+          DEFAULT: "#EAAA00",
+          400: "#F3C23A",
+        },
+        ink: "#F6E9F1",
+        mute: "#CDB3C6",
       },
-      animation: {
-        "fade-in": "fadeIn 0.6s ease-out forwards",
-        "slide-up": "slideUp 0.6s ease-out forwards",
-      },
-      keyframes: {
-        fadeIn: {
-          "0%": { opacity: "0" },
-          "100%": { opacity: "1" },
-        },
-        slideUp: {
-          "0%": { opacity: "0", transform: "translateY(20px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
+      fontFamily: {
+        display: ['"Young Serif"', "Georgia", "serif"],
+        sans: [
+          '"Hanken Grotesk Variable"',
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+        ],
       },
     },
   },
