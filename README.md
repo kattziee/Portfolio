@@ -19,7 +19,6 @@ npm install
 npm run dev
 ```
 
-
 ## Contact
 
 **Shahul Hameed Ali**
